@@ -1,0 +1,1352 @@
+// 20170511135719
+// https://raw.githubusercontent.com/erocheleau/scenarios-uabot/master/scenarios/capricorn.json
+
+{
+  "searchendpoint": "https://platformqa.cloud.coveo.com/rest/search",
+  "analyticsendpoint": "https://usageanalyticsstaging.coveo.com/rest/v15/analytics/",
+  "defaultOriginLevel1": "capricornSearch",
+  "timeBetweenVisits": 100,
+  "timeBetweenActions": 3,
+  "allowAnonymousVisits": true,
+  "anonymousTreshold": 0.5,
+  "orgName": "Capricorn Cafe",
+  "pipeline": "Community",
+  "globalfilter": "@objecttype=(FeedItem,KnowledgeArticleVersion,User,ContentDocument,Cafe_Product__c)",
+  "randomCustomData": [
+    {
+      "apiname": "product",
+      "values": [
+        "Bella Chrome",
+        "Easton Espresso",
+        "Easy Mart",
+        "Masso",
+        "Taskmaster",
+        "Testa Rossa"
+      ]
+    },
+    {
+      "apiname": "Recommendation",
+      "values": [
+        "Training Courses",
+        "Training Courses",
+        "Training Courses",
+        "Training Courses",
+        "Training Courses",
+        "Certifications",
+        "Certifications",
+        "Certifications",
+        "Certifications",
+        "Webinar",
+        "Webinar",
+        "Webinar",
+        "Webinar",
+        "Certifications",
+        "Status Upgrades",
+        "Webinar",
+        "",
+        ""
+      ]
+    },
+    {
+      "apiname": "partners",
+      "values": [
+        "CoffeeExpert",
+        "FreshCafe",
+        "FreshCafe",
+        "FreshCafe",
+        "FreshCafe",
+        "CoffeeKing",
+        "CoffeeKing",
+        "CoffeKing",
+        "I-Cafe",
+        "The Coffee Shop",
+        "Le cafe Euro",
+        "Coffee RnR",
+        "Coffee 4 Life"
+      ]
+    }
+  ],
+  "languages": [
+    "en",
+    "en",
+    "en",
+    "en",
+    "en",
+    "fr"
+  ],
+  "randomGoodQueries": [
+    "cafe",
+    "coffee",
+    "coffee brew",
+    "black coffee",
+    "coffee experience",
+    "capricorncafe",
+    "roasted coffee",
+    "expresso",
+    "brewing",
+    "cafe grinder",
+    "CapGourmet",
+    "cafe cake recipe",
+    "fair trade coffee",
+    "beans",
+    "coffee beans",
+    "coffee machine",
+    "coffee grinder",
+    "repair machine",
+    "customer service",
+    "best beans",
+    "espresso",
+    "coffee accessories",
+    "Coffee Machine doesn't work",
+    "Coffe Machine no power",
+    "Cafe is cold"
+  ],
+  "randomBadQueries": [
+    "capricorncafe",
+    "cafe",
+    "tea ware",
+    "cafr",
+    "coffe brow",
+    "espresso",
+    "browing",
+    "fillter",
+    "fairetrad coffe",
+    "deccaf",
+    "caffe",
+    "promotion"
+  ],
+  "scenarios": [
+    {
+      "name": "Q -> C(60%)",
+      "weight": 60,
+      "events": [
+        {
+          "type": "Search",
+          "arguments": {
+            "queryText": "",
+            "goodQuery": true
+          }
+        },
+        {
+          "type": "Click",
+          "arguments": {
+            "docNo": -1,
+            "offset": 0,
+            "probability": 0.6
+          }
+        }
+      ]
+    },
+    {
+      "name": "GQ -> C(45%) -> GQ -> C(50%)",
+      "weight": 20,
+      "events": [
+        {
+          "type": "Search",
+          "arguments": {
+            "queryText": "",
+            "goodQuery": true
+          }
+        },
+        {
+          "type": "Click",
+          "arguments": {
+            "docNo": -1,
+            "offset": 0,
+            "probability": 0.45
+          }
+        },
+        {
+          "type": "Search",
+          "arguments": {
+            "queryText": "",
+            "goodQuery": true
+          }
+        },
+        {
+          "type": "Click",
+          "arguments": {
+            "docNo": -1,
+            "offset": 1,
+            "probability": 0.5
+          }
+        }
+      ]
+    },
+    {
+      "name": "GQ -> C(55%) -> GQ -> C(55%) -> GQ -> C(60%)",
+      "weight": 10,
+      "events": [
+        {
+          "type": "Search",
+          "arguments": {
+            "queryText": "",
+            "goodQuery": true
+          }
+        },
+        {
+          "type": "Click",
+          "arguments": {
+            "docNo": -1,
+            "offset": 2,
+            "probability": 0.45
+          }
+        },
+        {
+          "type": "Search",
+          "arguments": {
+            "queryText": "",
+            "goodQuery": true
+          }
+        },
+        {
+          "type": "Click",
+          "arguments": {
+            "docNo": -1,
+            "offset": 0,
+            "probability": 0.45
+          }
+        },
+        {
+          "type": "Search",
+          "arguments": {
+            "queryText": "",
+            "goodQuery": true
+          }
+        },
+        {
+          "type": "Click",
+          "arguments": {
+            "docNo": -1,
+            "offset": 0,
+            "probability": 0.6
+          }
+        }
+      ]
+    },
+    {
+      "name": "Mobile GQ -> C(40%) -> GQ -> C(50%) -> GQ -> C(60%)",
+      "weight": 3,
+      "useragent": "Mozilla/5.0 (iPad; CPU OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1",
+      "events": [
+        {
+          "type": "Search",
+          "arguments": {
+            "queryText": "",
+            "goodQuery": true
+          }
+        },
+        {
+          "type": "Click",
+          "arguments": {
+            "docNo": -1,
+            "offset": 2,
+            "probability": 0.4
+          }
+        },
+        {
+          "type": "Search",
+          "arguments": {
+            "queryText": "",
+            "goodQuery": true
+          }
+        },
+        {
+          "type": "Click",
+          "arguments": {
+            "docNo": -1,
+            "offset": 0,
+            "probability": 0.5
+          }
+        },
+        {
+          "type": "Search",
+          "arguments": {
+            "queryText": "",
+            "goodQuery": true
+          }
+        },
+        {
+          "type": "Click",
+          "arguments": {
+            "docNo": -1,
+            "offset": 0,
+            "probability": 0.6
+          }
+        }
+      ]
+    },
+    {
+      "name": "GQ -> C(40%) -> GQ -> C(50%) -> GQ -> C(40%) -> GQ -> C(50%)",
+      "weight": 2,
+      "events": [
+        {
+          "type": "Search",
+          "arguments": {
+            "queryText": "",
+            "goodQuery": true
+          }
+        },
+        {
+          "type": "Click",
+          "arguments": {
+            "docNo": -1,
+            "offset": 0,
+            "probability": 0.4
+          }
+        },
+        {
+          "type": "Search",
+          "arguments": {
+            "queryText": "",
+            "goodQuery": true
+          }
+        },
+        {
+          "type": "Click",
+          "arguments": {
+            "docNo": -1,
+            "offset": 3,
+            "probability": 0.5
+          }
+        },
+        {
+          "type": "Search",
+          "arguments": {
+            "queryText": "",
+            "goodQuery": true
+          }
+        },
+        {
+          "type": "Click",
+          "arguments": {
+            "docNo": -1,
+            "offset": 0,
+            "probability": 0.4
+          }
+        },
+        {
+          "type": "Search",
+          "arguments": {
+            "queryText": "",
+            "goodQuery": true
+          }
+        },
+        {
+          "type": "Click",
+          "arguments": {
+            "docNo": -1,
+            "offset": 1,
+            "probability": 0.5
+          }
+        }
+      ]
+    },
+    {
+      "name": "GQ -> C(40%) -> GQ -> C(50%) -> GQ -> C(40%) -> GQ -> C(50%) -> GQ -> C(50%)",
+      "weight": 1,
+      "events": [
+        {
+          "type": "Search",
+          "arguments": {
+            "queryText": "",
+            "goodQuery": true
+          }
+        },
+        {
+          "type": "Click",
+          "arguments": {
+            "docNo": -1,
+            "offset": 1,
+            "probability": 0.4
+          }
+        },
+        {
+          "type": "Search",
+          "arguments": {
+            "queryText": "",
+            "goodQuery": true
+          }
+        },
+        {
+          "type": "Click",
+          "arguments": {
+            "docNo": -1,
+            "offset": 2,
+            "probability": 0.5
+          }
+        },
+        {
+          "type": "Search",
+          "arguments": {
+            "queryText": "",
+            "goodQuery": true
+          }
+        },
+        {
+          "type": "Click",
+          "arguments": {
+            "docNo": -1,
+            "offset": 0,
+            "probability": 0.4
+          }
+        },
+        {
+          "type": "Search",
+          "arguments": {
+            "queryText": "",
+            "goodQuery": true
+          }
+        },
+        {
+          "type": "Click",
+          "arguments": {
+            "docNo": -1,
+            "offset": 0,
+            "probability": 0.5
+          }
+        },
+        {
+          "type": "Search",
+          "arguments": {
+            "queryText": "",
+            "goodQuery": true
+          }
+        },
+        {
+          "type": "Click",
+          "arguments": {
+            "docNo": -1,
+            "offset": 4,
+            "probability": 0.5
+          }
+        }
+      ]
+    },
+    {
+      "name": "Mobile GQ -> C(40%) -> GQ -> C(50%) -> GQ -> C(40%) -> GQ -> C(50%) -> GQ -> C(60%)",
+      "weight": 2,
+      "useragent": "Mozilla/5.0 (Linux; Android 5.1.1; Nexus 6 Build/LYZ28E) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.23 Mobile Safari/537.36",
+      "events": [
+        {
+          "type": "Search",
+          "arguments": {
+            "queryText": "",
+            "goodQuery": true
+          }
+        },
+        {
+          "type": "Click",
+          "arguments": {
+            "docNo": -1,
+            "offset": 1,
+            "probability": 0.4
+          }
+        },
+        {
+          "type": "Search",
+          "arguments": {
+            "queryText": "",
+            "goodQuery": true
+          }
+        },
+        {
+          "type": "Click",
+          "arguments": {
+            "docNo": -1,
+            "offset": 1,
+            "probability": 0.5
+          }
+        },
+        {
+          "type": "Search",
+          "arguments": {
+            "queryText": "",
+            "goodQuery": true
+          }
+        },
+        {
+          "type": "Click",
+          "arguments": {
+            "docNo": -1,
+            "offset": 0,
+            "probability": 0.4
+          }
+        },
+        {
+          "type": "Search",
+          "arguments": {
+            "queryText": "",
+            "goodQuery": true
+          }
+        },
+        {
+          "type": "Click",
+          "arguments": {
+            "docNo": -1,
+            "offset": 0,
+            "probability": 0.5
+          }
+        },
+        {
+          "type": "Search",
+          "arguments": {
+            "queryText": "",
+            "goodQuery": true
+          }
+        },
+        {
+          "type": "Click",
+          "arguments": {
+            "docNo": -1,
+            "offset": 2,
+            "probability": 0.6
+          }
+        }
+      ]
+    },
+    {
+      "name": "BQ -> C(20%) -> GQ -> C(40%)",
+      "weight": 4,
+      "events": [
+        {
+          "type": "Search",
+          "arguments": {
+            "queryText": "",
+            "goodQuery": false
+          }
+        },
+        {
+          "type": "Click",
+          "arguments": {
+            "docNo": -1,
+            "offset": 0,
+            "probability": 0.1
+          }
+        },
+        {
+          "type": "Search",
+          "arguments": {
+            "queryText": "",
+            "goodQuery": true
+          }
+        },
+        {
+          "type": "Click",
+          "arguments": {
+            "docNo": -1,
+            "offset": 0,
+            "probability": 0.4
+          }
+        }
+      ]
+    },
+    {
+      "name": "Reveal scenario",
+      "weight": 3,
+      "events": [
+        {
+          "type": "Search",
+          "arguments": {
+            "queryText": "cafe grinder",
+            "goodQuery": false
+          }
+        },
+        {
+          "type": "SearchAndClick",
+          "arguments": {
+            "queryText": "coffee grinder",
+            "docClickTitle": "What is best coffee grinder",
+            "probability": 0.75
+          }
+        }
+      ]
+    },
+    {
+      "name": "Reveal scenario 2",
+      "weight": 3,
+      "events": [
+        {
+          "type": "Search",
+          "arguments": {
+            "queryText": "fairtrad coffe",
+            "goodQuery": false
+          }
+        },
+        {
+          "type": "SearchAndClick",
+          "arguments": {
+            "queryText": "fair trade coffee",
+            "docClickTitle": "Getting the Most Out of Your Industrial Coffee Machine",
+            "probability": 0.75
+          }
+        }
+      ]
+    },
+    {
+      "name": "Reveal scenario 3",
+      "weight": 3,
+      "events": [
+        {
+          "type": "Search",
+          "arguments": {
+            "queryText": "deccaf Coffee",
+            "goodQuery": false
+          }
+        },
+        {
+          "type": "SearchAndClick",
+          "arguments": {
+            "queryText": "coffee decaf",
+            "docClickTitle": "DECAF REDVELVA ESPRESSO",
+            "probability": 0.75
+          }
+        }
+      ]
+    },
+    {
+      "name": "Reveal scenario 4",
+      "weight": 3,
+      "events": [
+        {
+          "type": "Search",
+          "arguments": {
+            "queryText": "TR-067RR4",
+            "goodQuery": false
+          }
+        },
+        {
+          "type": "SearchAndClick",
+          "arguments": {
+            "queryText": "Testa Rossa",
+            "docClickTitle": "Testa Rossa Coffee Machine",
+            "probability": 0.75
+          }
+        }
+      ]
+    },
+    {
+      "name": "Scenarios deflected (Coffee Machine)",
+      "weight": 30,
+      "events": [
+        {
+          "type": "SetOrigin",
+          "arguments": {
+            "originLevel1": "CaseCreation"
+          }
+        },
+        {
+          "type": "SearchAndClick",
+          "arguments": {
+            "queryText": "Coffee Machine",
+            "caseSearch": false,
+            "inputTitle": "Subject",
+            "probability": 0.90,
+            "docClickTitle": "Best Coffee Machines From Around The World",
+            "goodQuery": false
+          }
+        },
+        {
+          "type": "Custom",
+          "arguments": {
+            "actionCause": "cancelButton",
+            "actionType": "caseCreation",
+            "customData": {
+              "hasClicks": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Scenarios deflected (machine brews)",
+      "weight": 3,
+      "events": [
+        {
+          "type": "SetOrigin",
+          "arguments": {
+            "originLevel1": "CaseCreation"
+          }
+        },
+        {
+          "type": "SearchAndClick",
+          "arguments": {
+            "queryText": "machine brews",
+            "caseSearch": false,
+            "inputTitle": "Subject",
+            "probability": 0.90,
+            "docClickTitle": "New Coffee Machines Make Tastier Coffee Faster",
+            "goodQuery": false
+          }
+        },
+        {
+          "type": "Custom",
+          "arguments": {
+            "actionCause": "cancelButton",
+            "actionType": "caseCreation",
+            "customData": {
+              "hasClicks": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Scenarios deflected (industrial coffee grinder)",
+      "weight": 3,
+      "events": [
+        {
+          "type": "SetOrigin",
+          "arguments": {
+            "originLevel1": "CaseCreation"
+          }
+        },
+        {
+          "type": "SearchAndClick",
+          "arguments": {
+            "queryText": "industrial coffee grinder",
+            "caseSearch": false,
+            "inputTitle": "Subject",
+            "probability": 0.90,
+            "docClickTitle": "Getting the Most Out of Your Industrial Coffee Machine",
+            "goodQuery": false
+          }
+        },
+        {
+          "type": "Custom",
+          "arguments": {
+            "actionCause": "cancelButton",
+            "actionType": "caseCreation",
+            "customData": {
+              "hasClicks": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Scenarios deflected (Nespresso Stop)",
+      "weight": 15,
+      "events": [
+        {
+          "type": "SetOrigin",
+          "arguments": {
+            "originLevel1": "CaseCreation"
+          }
+        },
+        {
+          "type": "SearchAndClick",
+          "arguments": {
+            "queryText": "Nespresso Stop",
+            "caseSearch": false,
+            "inputTitle": "Subject",
+            "probability": 0.95,
+            "docClickTitle": "Capricorn Coffee Lattissima",
+            "goodQuery": false
+          }
+        },
+        {
+          "type": "Custom",
+          "arguments": {
+            "actionCause": "cancelButton",
+            "actionType": "caseCreation",
+            "customData": {
+              "hasClicks": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Scenarios deflected (Start Button)",
+      "weight": 10,
+      "events": [
+        {
+          "type": "SetOrigin",
+          "arguments": {
+            "originLevel1": "CaseCreation"
+          }
+        },
+        {
+          "type": "Search",
+          "arguments": {
+            "queryText": "Start Button",
+            "goodQuery": true,
+            "caseSearch": false,
+            "inputTitle": "Subject"
+          }
+        },
+        {
+          "type": "Click",
+          "arguments": {
+            "docNo": -1,
+            "offset": 0,
+            "probability": 0.45
+          }
+        },
+        {
+          "type": "Custom",
+          "arguments": {
+            "actionCause": "unloadPage",
+            "actionType": "caseCreation",
+            "customData": {
+              "hasClicks": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Scenarios deflected (Start Button)",
+      "weight": 10,
+      "events": [
+        {
+          "type": "SetOrigin",
+          "arguments": {
+            "originLevel1": "CaseCreation"
+          }
+        },
+        {
+          "type": "Search",
+          "arguments": {
+            "queryText": "Start Button",
+            "goodQuery": true,
+            "caseSearch": false,
+            "inputTitle": "Subject"
+          }
+        },
+        {
+          "type": "Click",
+          "arguments": {
+            "docNo": -1,
+            "offset": 0,
+            "probability": 0.45
+          }
+        },
+        {
+          "type": "Custom",
+          "arguments": {
+            "actionCause": "unloadPage",
+            "actionType": "caseCreation",
+            "customData": {
+              "hasClicks": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Scenarios deflected (industrial coffee grinder)",
+      "weight": 25,
+      "events": [
+        {
+          "type": "SetOrigin",
+          "arguments": {
+            "originLevel1": "CaseCreation"
+          }
+        },
+        {
+          "type": "Search",
+          "arguments": {
+            "queryText": "Coffee Machine",
+            "goodQuery": true,
+            "caseSearch": false,
+            "inputTitle": "Subject"
+          }
+        },
+        {
+          "type": "Click",
+          "arguments": {
+            "docNo": -1,
+            "offset": 0,
+            "probability": 0.45
+          }
+        },
+        {
+          "type": "Custom",
+          "arguments": {
+            "actionCause": "unloadPage",
+            "actionType": "caseCreation",
+            "customData": {
+              "hasClicks": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Scenarios not deflected (The coffee is not hot)",
+      "weight": 7,
+      "events": [
+        {
+          "type": "SetOrigin",
+          "arguments": {
+            "originLevel1": "CaseCreation"
+          }
+        },
+        {
+          "type": "Search",
+          "arguments": {
+            "queryText": "The coffee is not hot",
+            "goodQuery": true,
+            "caseSearch": false,
+            "inputTitle": "Subject"
+          }
+        },
+        {
+          "type": "Custom",
+          "arguments": {
+            "actionCause": "submitButton",
+            "actionType": "caseCreation",
+            "customData": {
+              "hasClicks": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Scenarios not deflected (The coffee is not hot)",
+      "weight": 7,
+      "events": [
+        {
+          "type": "SetOrigin",
+          "arguments": {
+            "originLevel1": "CaseCreation"
+          }
+        },
+        {
+          "type": "Search",
+          "arguments": {
+            "queryText": "The coffee is not hot",
+            "goodQuery": true,
+            "caseSearch": false,
+            "inputTitle": "Subject"
+          }
+        },
+        {
+          "type": "SearchAndClick",
+          "arguments": {
+            "queryText": "No HD",
+            "caseSearch": true,
+            "inputTitle": "Subject",
+            "probability": 0.85,
+            "docClickTitle": "Leaf Rust in Africa",
+            "goodQuery": false
+          }
+        },
+        {
+          "type": "Custom",
+          "arguments": {
+            "actionCause": "submitButton",
+            "actionType": "caseCreation",
+            "customData": {
+              "hasClicks": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Scenarios not deflected (The machine doesn't power on)",
+      "weight": 7,
+      "events": [
+        {
+          "type": "SetOrigin",
+          "arguments": {
+            "originLevel1": "CaseCreation"
+          }
+        },
+        {
+          "type": "Search",
+          "arguments": {
+            "queryText": "The machine doesn't power on",
+            "goodQuery": true,
+            "caseSearch": false,
+            "inputTitle": "Subject"
+          }
+        },
+        {
+          "type": "SearchAndClick",
+          "arguments": {
+            "queryText": "No HD",
+            "caseSearch": true,
+            "inputTitle": "Subject",
+            "probability": 0.85,
+            "docClickTitle": "X150 Product Manual",
+            "goodQuery": false
+          }
+        },
+        {
+          "type": "Custom",
+          "arguments": {
+            "actionCause": "submitButton",
+            "actionType": "caseCreation",
+            "customData": {
+              "hasClicks": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Scenarios not deflected (The machine doesn't power on)",
+      "weight": 7,
+      "events": [
+        {
+          "type": "SetOrigin",
+          "arguments": {
+            "originLevel1": "CaseCreation"
+          }
+        },
+        {
+          "type": "Search",
+          "arguments": {
+            "queryText": "The machine doesn't power on",
+            "goodQuery": true,
+            "caseSearch": false,
+            "inputTitle": "Subject"
+          }
+        },
+        {
+          "type": "Click",
+          "arguments": {
+            "docNo": -1,
+            "offset": 0,
+            "probability": 0.45
+          }
+        },
+        {
+          "type": "Custom",
+          "arguments": {
+            "actionCause": "submitButton",
+            "actionType": "caseCreation",
+            "customData": {
+              "hasClicks": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Scenarios not deflected (coffee machine does not insert milk)",
+      "weight": 10,
+      "events": [
+        {
+          "type": "SetOrigin",
+          "arguments": {
+            "originLevel1": "CaseCreation"
+          }
+        },
+        {
+          "type": "Search",
+          "arguments": {
+            "queryText": "coffee machine does not insert milk",
+            "goodQuery": true,
+            "caseSearch": false,
+            "inputTitle": "Subject"
+          }
+        },
+        {
+          "type": "Click",
+          "arguments": {
+            "docNo": -1,
+            "offset": 0,
+            "probability": 0.45
+          }
+        },
+        {
+          "type": "Custom",
+          "arguments": {
+            "actionCause": "submitButton",
+            "actionType": "caseCreation",
+            "customData": {
+              "hasClicks": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Scenarios not deflected (coffee machine does not insert milk)",
+      "weight": 10,
+      "events": [
+        {
+          "type": "SetOrigin",
+          "arguments": {
+            "originLevel1": "CaseCreation"
+          }
+        },
+        {
+          "type": "Search",
+          "arguments": {
+            "queryText": "coffee machine does not insert milk",
+            "goodQuery": true,
+            "caseSearch": false,
+            "inputTitle": "Subject"
+          }
+        },
+        {
+          "type": "SearchAndClick",
+          "arguments": {
+            "queryText": "No HD",
+            "caseSearch": true,
+            "inputTitle": "Subject",
+            "probability": 0.85,
+            "docClickTitle": "Help! Am I going crazy here?",
+            "goodQuery": false
+          }
+        },
+        {
+          "type": "Custom",
+          "arguments": {
+            "actionCause": "submitButton",
+            "actionType": "caseCreation",
+            "customData": {
+              "hasClicks": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Scenarios not deflected (When I bought my machine I was supposed to have...)",
+      "weight": 20,
+      "events": [
+        {
+          "type": "SetOrigin",
+          "arguments": {
+            "originLevel1": "CaseCreation"
+          }
+        },
+        {
+          "type": "Search",
+          "arguments": {
+            "queryText": "When I bought my machine I was supposed to have...",
+            "goodQuery": true,
+            "caseSearch": false,
+            "inputTitle": "Subject"
+          }
+        },
+        {
+          "type": "Click",
+          "arguments": {
+            "docNo": -1,
+            "offset": 0,
+            "probability": 0.45
+          }
+        },
+        {
+          "type": "Custom",
+          "arguments": {
+            "actionCause": "submitButton",
+            "actionType": "caseCreation",
+            "customData": {
+              "hasClicks": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Scenarios not deflected (When I bought my machine I was supposed to have...)",
+      "weight": 20,
+      "events": [
+        {
+          "type": "SetOrigin",
+          "arguments": {
+            "originLevel1": "CaseCreation"
+          }
+        },
+        {
+          "type": "Search",
+          "arguments": {
+            "queryText": "When I bought my machine I was supposed to have...",
+            "goodQuery": true,
+            "caseSearch": false,
+            "inputTitle": "Subject"
+          }
+        },
+        {
+          "type": "Custom",
+          "arguments": {
+            "actionCause": "submitButton",
+            "actionType": "caseCreation",
+            "customData": {
+              "hasClicks": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Scenarios not deflected (When I bought my machine I was supposed to have...)",
+      "weight": 20,
+      "events": [
+        {
+          "type": "SetOrigin",
+          "arguments": {
+            "originLevel1": "CaseCreation"
+          }
+        },
+        {
+          "type": "Search",
+          "arguments": {
+            "queryText": "When I bought my machine I was supposed to have...",
+            "goodQuery": true,
+            "caseSearch": false,
+            "inputTitle": "Subject"
+          }
+        },
+        {
+          "type": "SearchAndClick",
+          "arguments": {
+            "queryText": "No HD",
+            "caseSearch": true,
+            "inputTitle": "Subject",
+            "probability": 0.85,
+            "docClickTitle": "Capricorn Coffee Lattissima",
+            "goodQuery": false
+          }
+        },
+        {
+          "type": "Custom",
+          "arguments": {
+            "actionCause": "submitButton",
+            "actionType": "caseCreation",
+            "customData": {
+              "hasClicks": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Scenarios not deflected (Piece B is missing in the box)",
+      "weight": 10,
+      "events": [
+        {
+          "type": "SetOrigin",
+          "arguments": {
+            "originLevel1": "CaseCreation"
+          }
+        },
+        {
+          "type": "Search",
+          "arguments": {
+            "queryText": "Piece B is missing in the box",
+            "goodQuery": true,
+            "caseSearch": false,
+            "inputTitle": "Subject"
+          }
+        },
+        {
+          "type": "Click",
+          "arguments": {
+            "docNo": -1,
+            "offset": 0,
+            "probability": 0.45
+          }
+        },
+        {
+          "type": "Custom",
+          "arguments": {
+            "actionCause": "submitButton",
+            "actionType": "caseCreation",
+            "customData": {
+              "hasClicks": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "Search",
+      "arguments": {
+        "queryText": "Piece C is missing in the box",
+        "goodQuery": true,
+        "caseSearch": false,
+        "inputTitle": "Subject"
+      }
+    },
+    {
+      "type": "Custom",
+      "arguments": {
+        "actionCause": "submitButton",
+        "actionType": "caseCreation",
+        "customData": {
+          "hasClicks": false
+        }
+      }
+    },
+    {
+      "type": "Search",
+      "arguments": {
+        "queryText": "Piece H is missing in the box",
+        "goodQuery": true,
+        "caseSearch": false,
+        "inputTitle": "Subject"
+      }
+    },
+    {
+      "type": "SearchAndClick",
+      "arguments": {
+        "queryText": "No HD",
+        "caseSearch": true,
+        "inputTitle": "Subject",
+        "probability": 0.85,
+        "docClickTitle": "Capricorn Coffee Accessories",
+        "goodQuery": false
+      }
+    },
+    {
+      "type": "Custom",
+      "arguments": {
+        "actionCause": "submitButton",
+        "actionType": "caseCreation",
+        "customData": {
+          "hasClicks": false
+        }
+      }
+    },
+    {
+      "name": "Scenarios not deflected (How to repair my coffee maker)",
+      "weight": 5,
+      "events": [
+        {
+          "type": "SetOrigin",
+          "arguments": {
+            "originLevel1": "CaseCreation"
+          }
+        },
+        {
+          "type": "Search",
+          "arguments": {
+            "queryText": "How to repair my coffee maker",
+            "goodQuery": true,
+            "caseSearch": false,
+            "inputTitle": "Subject"
+          }
+        },
+        {
+          "type": "Click",
+          "arguments": {
+            "docNo": -1,
+            "offset": 0,
+            "probability": 0.45
+          }
+        },
+        {
+          "type": "Custom",
+          "arguments": {
+            "actionCause": "submitButton",
+            "actionType": "caseCreation",
+            "customData": {
+              "hasClicks": true
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
