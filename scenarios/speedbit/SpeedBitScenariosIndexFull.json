@@ -472,7 +472,7 @@
           "type": "SearchAndClick",
           "arguments": {
             "queryText": "SpeedBit Blaze",
-            "docClickTitle": "Introducing Fitbit Blaze™",
+            "docClickTitle": "Speedbit Blaze",
             "probability": 0.75
           }
         }
@@ -491,8 +491,8 @@
         {
           "type": "SearchAndClick",
           "arguments": {
-            "queryText": "fitbit Charge",
-            "docClickTitle": "Introducing Fitbit Charge HR™",
+            "queryText": "Speedbit Charge",
+            "docClickTitle": "Shop Speedbit Charge 2",
             "probability": 0.75
           }
         }
@@ -512,7 +512,7 @@
           "type": "SearchAndClick",
           "arguments": {
             "queryText": "Battery Life",
-            "docClickTitle": "Fitbit Help - Can I improve my tracker's battery life?",
+            "docClickTitle": "Speedbit Help - Can I improve my Speedbit device's battery life?",
             "probability": 0.75
           }
         }
@@ -750,7 +750,7 @@
         "type": "SearchAndClick",
         "arguments": {
           "queryText": "quick view function",
-          "docClickTitle": "The quick view function is being introduced as a firmware...",
+          "docClickTitle": "Speedbit Charge 2 User Manual.pdf",
           "probability": 0.6,
           "quickview": true
         }
@@ -772,7 +772,7 @@
             "caseSearch": true,
             "inputTitle": "Subject",
             "probability": 0.90,
-            "docClickTitle": "Resets",
+            "docClickTitle": "Speedbit Help - How do I factory reset my Charge or Charge HR?",
             "goodQuery": false
           }
         },
@@ -836,7 +836,7 @@
             "caseSearch": true,
             "inputTitle": "Subject",
             "probability": 0.90,
-            "docClickTitle": "no connection to smartphone",
+            "docClickTitle": "No internet connection",
             "goodQuery": false
           }
         },
@@ -868,39 +868,7 @@
             "caseSearch": true,
             "inputTitle": "Subject",
             "probability": 0.90,
-            "docClickTitle": "My Speedbit is not recording floors climbed",
-            "goodQuery": false
-          }
-        },
-        {
-          "type": "Custom",
-          "arguments": {
-            "eventValue": "cancelButton",
-            "eventType": "caseCreation",
-            "customData": {
-              "hasclicks": true
-            }
-          }
-        }
-      ]
-    },
-    {
-      "name": "Scenarios deflected (xbr6 user guide)",
-      "weight": 1,
-      "events": [{
-          "type": "SetOrigin",
-          "arguments": {
-            "originLevel1": "CaseCreation"
-          }
-        },
-        {
-          "type": "SearchAndClick",
-          "arguments": {
-            "queryText": "xbr6 user guide",
-            "caseSearch": true,
-            "inputTitle": "Subject",
-            "probability": 0.90,
-            "docClickTitle": "New User Experience - Connecting the Rift",
+            "docClickTitle": "Hi, My speedbit charge is not recording all my steps. I am",
             "goodQuery": false
           }
         },
@@ -1342,7 +1310,7 @@
             "caseSearch": true,
             "inputTitle": "Subject",
             "probability": 0.85,
-            "docClickTitle": "Re: Blaze buttons stopped working!",
+            "docClickTitle": "Charge Display stopped working",
             "goodQuery": false,
             "customData": {
               "product": "XBR6 TV"
@@ -1395,7 +1363,7 @@
             "caseSearch": true,
             "inputTitle": "Subject",
             "probability": 0.85,
-            "docClickTitle": "Fitbit Help - Can I improve my tracker's battery life?",
+            "docClickTitle": "How do I improve my tracker's battery life?",
             "goodQuery": false,
             "customData": {
               "product": "Speedbit Zip Fitness Tracker"
@@ -1431,7 +1399,7 @@
             "caseSearch": true,
             "inputTitle": "Subject",
             "probability": 0.85,
-            "docClickTitle": "how to set the watch on chargehr.",
+            "docClickTitle": "Speedbit Alta: How To Charge Your Tracker",
             "goodQuery": false,
             "customData": {
               "product": "Speed Flex 2 Fitness Tracker"
@@ -1467,7 +1435,7 @@
             "caseSearch": true,
             "inputTitle": "Subject",
             "probability": 0.85,
-            "docClickTitle": "Re: Blaze and 'Training'",
+            "docClickTitle": "SPEEDBIT COACH",
             "goodQuery": false,
             "customData": {
               "product": "Speed Flex 2 Fitness Tracker"
@@ -1500,11 +1468,11 @@
         {
           "type": "SearchAndClick",
           "arguments": {
-            "queryText": "can't connect to my",
+            "queryText": "can't connect",
             "caseSearch": true,
             "inputTitle": "Subject",
             "probability": 0.85,
-            "docClickTitle": "Can't connect to my Bluetooth",
+            "docClickTitle": "can't connect speedbit to phone",
             "goodQuery": false,
             "customData": {
               "product": "Speedbit Charge 2 Fitness"
