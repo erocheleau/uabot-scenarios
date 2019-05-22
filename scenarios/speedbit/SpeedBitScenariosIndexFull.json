@@ -762,7 +762,7 @@
       "events": [{
           "type": "SetOrigin",
           "arguments": {
-            "originLevel1": "CaseCreation"
+            "originLevel1": "CommunityCaseCreation"
           }
         },
         {
@@ -794,7 +794,7 @@
       "events": [{
           "type": "SetOrigin",
           "arguments": {
-            "originLevel1": "CaseCreation"
+            "originLevel1": "CommunityCaseCreation"
           }
         },
         {
@@ -826,7 +826,7 @@
       "events": [{
           "type": "SetOrigin",
           "arguments": {
-            "originLevel1": "CaseCreation"
+            "originLevel1": "CommunityCaseCreation"
           }
         },
         {
@@ -858,7 +858,7 @@
       "events": [{
           "type": "SetOrigin",
           "arguments": {
-            "originLevel1": "CaseCreation"
+            "originLevel1": "CommunityCaseCreation"
           }
         },
         {
@@ -890,7 +890,7 @@
       "events": [{
           "type": "SetOrigin",
           "arguments": {
-            "originLevel1": "CaseCreation"
+            "originLevel1": "CommunityCaseCreation"
           }
         },
         {
@@ -920,7 +920,7 @@
       "events": [{
           "type": "SetOrigin",
           "arguments": {
-            "originLevel1": "CaseCreation"
+            "originLevel1": "CommunityCaseCreation"
           }
         },
         {
@@ -959,7 +959,7 @@
       "events": [{
           "type": "SetOrigin",
           "arguments": {
-            "originLevel1": "CaseCreation"
+            "originLevel1": "CommunityCaseCreation"
           }
         },
         {
@@ -1058,7 +1058,7 @@
       "events": [{
           "type": "SetOrigin",
           "arguments": {
-            "originLevel1": "CaseCreation"
+            "originLevel1": "CommunityCaseCreation"
           }
         },
         {
@@ -1092,7 +1092,7 @@
       "events": [{
           "type": "SetOrigin",
           "arguments": {
-            "originLevel1": "CaseCreation"
+            "originLevel1": "CommunityCaseCreation"
           }
         },
         {
@@ -1142,7 +1142,7 @@
         {
           "type": "SetOrigin",
           "arguments": {
-            "originLevel1": "CaseCreation"
+            "originLevel1": "CommunityCaseCreation"
           }
         },
         {
@@ -1181,7 +1181,7 @@
       "events": [{
           "type": "SetOrigin",
           "arguments": {
-            "originLevel1": "CaseCreation"
+            "originLevel1": "CommunityCaseCreation"
           }
         },
         {
@@ -1231,7 +1231,7 @@
         {
           "type": "SetOrigin",
           "arguments": {
-            "originLevel1": "CaseCreation"
+            "originLevel1": "CommunityCaseCreation"
           }
         },
         {
@@ -1266,7 +1266,7 @@
       "events": [{
           "type": "SetOrigin",
           "arguments": {
-            "originLevel1": "CaseCreation"
+            "originLevel1": "CommunityCaseCreation"
           }
         },
         {
@@ -1300,7 +1300,7 @@
       "events": [{
           "type": "SetOrigin",
           "arguments": {
-            "originLevel1": "CaseCreation"
+            "originLevel1": "CommunityCaseCreation"
           }
         },
         {
@@ -1353,7 +1353,7 @@
         {
           "type": "SetOrigin",
           "arguments": {
-            "originLevel1": "CaseCreation"
+            "originLevel1": "CommunityCaseCreation"
           }
         },
         {
@@ -1389,7 +1389,7 @@
       "events": [{
           "type": "SetOrigin",
           "arguments": {
-            "originLevel1": "CaseCreation"
+            "originLevel1": "CommunityCaseCreation"
           }
         },
         {
@@ -1425,7 +1425,7 @@
       "events": [{
           "type": "SetOrigin",
           "arguments": {
-            "originLevel1": "CaseCreation"
+            "originLevel1": "CommunityCaseCreation"
           }
         },
         {
@@ -1462,7 +1462,7 @@
       "events": [{
           "type": "SetOrigin",
           "arguments": {
-            "originLevel1": "CaseCreation"
+            "originLevel1": "CommunityCaseCreation"
           }
         },
         {
@@ -1498,7 +1498,7 @@
       "events": [{
           "type": "SetOrigin",
           "arguments": {
-            "originLevel1": "CaseCreation"
+            "originLevel1": "CommunityCaseCreation"
           }
         },
         {
@@ -1544,7 +1544,7 @@
       "events": [{
           "type": "SetOrigin",
           "arguments": {
-            "originLevel1": "CaseCreation"
+            "originLevel1": "CommunityCaseCreation"
           }
         },
         {
@@ -1590,7 +1590,7 @@
       "events": [{
           "type": "SetOrigin",
           "arguments": {
-            "originLevel1": "CaseCreation"
+            "originLevel1": "CommunityCaseCreation"
           }
         },
         {
@@ -1636,7 +1636,7 @@
       "events": [{
           "type": "SetOrigin",
           "arguments": {
-            "originLevel1": "CaseCreation"
+            "originLevel1": "CommunityCaseCreation"
           }
         },
         {
@@ -1682,7 +1682,7 @@
       "events": [{
           "type": "SetOrigin",
           "arguments": {
-            "originLevel1": "CaseCreation"
+            "originLevel1": "CommunityCaseCreation"
           }
         },
         {
@@ -1728,7 +1728,7 @@
       "events": [{
           "type": "SetOrigin",
           "arguments": {
-            "originLevel1": "CaseCreation"
+            "originLevel1": "CommunityCaseCreation"
           }
         },
         {
@@ -1774,7 +1774,7 @@
       "events": [{
           "type": "SetOrigin",
           "arguments": {
-            "originLevel1": "CaseCreation"
+            "originLevel1": "CommunityCaseCreation"
           }
         },
         {
@@ -1836,7 +1836,7 @@
         {
           "type": "SetOrigin",
           "arguments": {
-            "originLevel1": "CaseCreation"
+            "originLevel1": "CommunityCaseCreation"
           }
         },
         {
