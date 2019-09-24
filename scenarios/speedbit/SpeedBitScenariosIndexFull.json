@@ -14,7 +14,7 @@
   "allowEntitlements": true,
   "randomCustomData": [{
       "apiname": "product",
-      "values": ["Speedbit Blaze Smart", "Speedbit Flex 2 Fitness", "Speedbit Charge 2 Fitness", "Fitbit Flex 2 Bangle", "Speedbit Zip Fitness Tracker", "Fitbit Flex 2 Lariat Necklace Silver", "Speedbit Charge HR", "Fitbit Alta Fitness", "Fitbit Blaze Smart Fitness Watch - Large - Black", "Speed Flex 2 Fitness Tracker"]
+      "values": ["Speedbit Blaze Smart", "Speedbit Flex 2 Fitness", "Speedbit Charge 2 Fitness", "Speedbit Flex 2 Bangle", "Speedbit Zip Fitness Tracker", "Speedbit Flex 2 Lariat Necklace Silver", "Speedbit Charge HR", "Speedbit Alta Fitness", "Speedbit Blaze Smart Fitness Watch - Large - Black", "Speed Flex 2 Fitness Tracker"]
     },
     {
       "apiname": "partners",
@@ -36,9 +36,9 @@
 
   "languages": ["en", "en", "en", "en", "en", "fr"],
   "randomGoodQueries": [
-    "Fitness Watch", "Speedbit Blaze broken", "Blaze heart rate monitor not working", "Tracking Watch", "How do Fitbit trackers sync their data?", "Can I turn off the LED lights?", "Can I improve my tracker's battery life?", "How do I track my health and fitness goals with Fitbit?", "What is PurePulse?", "How does my tracker detect my heart rate?", "Map Watch", "Smart watch", "Training Watch", "Training Device", "memory issue", "no picture on my watch", "how to setup bluetooth with my cell phone", "connect cellphone",
+    "Fitness Watch", "Speedbit Blaze broken", "Blaze heart rate monitor not working", "Tracking Watch", "How do Speedbit trackers sync their data?", "Can I turn off the LED lights?", "Can I improve my tracker's battery life?", "How do I track my health and fitness goals with Speedbit?", "What is PurePulse?", "How does my tracker detect my heart rate?", "Map Watch", "Smart watch", "Training Watch", "Training Device", "memory issue", "no picture on my watch", "how to setup bluetooth with my cell phone", "connect cellphone",
     "broken screen", "connect laptop to smart watch", "update watch", "how to add maps", "how to see map on cell phone", "how to enable the intelligent assistant", "how to charge the watch", "Where could I find", "no more colors on my",
-    "Connect smart watch", "smart watch is not working", "Speedbit vs fitbit", "tracking system", "how can I see my run", "Mortens Fitness", "Arizona Specialists", "Certification of speedbit", "How to become a reseller", "Blaze User guide"
+    "Connect smart watch", "smart watch is not working", "tracking system", "how can I see my run", "Mortens Fitness", "Arizona Specialists", "Certification of speedbit", "How to become a reseller", "Blaze User guide"
   ],
   "randomBadQueries": ["no picture seedbit", "betooth not functionnal", "can't connect to my", "no pickture", "Speedbit blase", "Update flex 1", "piks", "connektion"],
   "scenarios": [{
@@ -479,12 +479,12 @@
       ]
     },
     {
-      "name": "ML scenario fitbit 452547",
+      "name": "ML scenario speedbit 452547",
       "weight": 3,
       "events": [{
           "type": "Search",
           "arguments": {
-            "queryText": "fitbit 452547",
+            "queryText": "Speedbit 452547",
             "goodQuery": false
           }
         },
@@ -524,7 +524,7 @@
       "events": [{
           "type": "Search",
           "arguments": {
-            "queryText": "FitBit Flex",
+            "queryText": "Speedbit Flex",
             "goodQuery": true
           }
         },
@@ -553,7 +553,7 @@
       "events": [{
           "type": "Search",
           "arguments": {
-            "queryText": "Fitbit Charge",
+            "queryText": "Speedbit Charge",
             "goodQuery": true
           }
         },
@@ -691,7 +691,7 @@
       "events": [{
           "type": "Search",
           "arguments": {
-            "queryText": "fitbit Blaze",
+            "queryText": "Speedbit Blaze",
             "goodQuery": true
           }
         },
@@ -1103,7 +1103,7 @@
             "caseSearch": true,
             "inputTitle": "Subject",
             "customData": {
-              "product": "Fitbit Flex 2 Bangle"
+              "product": "Speedbit Flex 2 Bangle"
             }
           }
         },
@@ -1114,7 +1114,7 @@
             "eventType": "caseCreation",
             "customData": {
               "hasclicks": false,
-              "product": "Fitbit Flex 2 Bangle"
+              "product": "Speedbit Flex 2 Bangle"
             }
           }
         }
@@ -1277,7 +1277,7 @@
             "caseSearch": true,
             "inputTitle": "Subject",
             "customData": {
-              "product": "Fitbit Alta Fitness"
+              "product": "Speedbit Alta Fitness"
             }
           }
         },
@@ -1288,7 +1288,7 @@
             "eventType": "caseCreation",
             "customData": {
               "hasclicks": false,
-              "product": "Fitbit Alta Fitness"
+              "product": "Speedbit Alta Fitness"
             }
           }
         }
@@ -1509,7 +1509,7 @@
             "caseSearch": true,
             "inputTitle": "Subject",
             "customData": {
-              "product": "Fitbit Flex 2 Bangle"
+              "product": "Speedbit Flex 2 Bangle"
             }
           }
         },
@@ -1521,7 +1521,7 @@
             "probability": 0.9,
             "quickview": true,
             "customData": {
-              "product": "Fitbit Flex 2 Bangle"
+              "product": "Speedbit Flex 2 Bangle"
             }
           }
         },
@@ -1532,7 +1532,7 @@
             "eventType": "caseCreation",
             "customData": {
               "hasclicks": false,
-              "product": "Fitbit Flex 2 Bangle"
+              "product": "Speedbit Flex 2 Bangle"
             }
           }
         }
@@ -1693,7 +1693,7 @@
             "caseSearch": true,
             "inputTitle": "Subject",
             "customData": {
-              "product": "Fitbit Flex 2 Bangle"
+              "product": "Speedbit Flex 2 Bangle"
             }
           }
         },
@@ -1705,7 +1705,7 @@
             "probability": 0.6,
             "quickview": true,
             "customData": {
-              "product": "Fitbit Flex 2 Bangle"
+              "product": "Speedbit Flex 2 Bangle"
             }
           }
         },
@@ -1716,7 +1716,7 @@
             "eventType": "caseCreation",
             "customData": {
               "hasclicks": true,
-              "product": "Fitbit Flex 2 Bangle"
+              "product": "Speedbit Flex 2 Bangle"
             }
           }
         }
