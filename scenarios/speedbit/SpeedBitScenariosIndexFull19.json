@@ -1,0 +1,423 @@
+{
+    "searchendpoint": "https://platform.cloud.coveo.com/rest/search/",
+    "analyticsendpoint": "https://usageanalytics.coveo.com/rest/v15/analytics/",
+    "orgName": "speedbit2",
+    "timeBetweenVisits": 2,
+    "defaultOriginLevel1": "default",
+    "randomGoodQueries": [],
+    "randomBadQueries": [],
+    "scenarios": [
+        {
+            "name": "x_articlepage_querysuggest",
+            "weight": 1,
+            "events": [
+                {
+                    "type": "SetOrigin",
+                    "arguments": {
+                        "originLevel1": "x_articlepage_querysuggest"
+                    }
+                },
+                {
+                    "type": "Search",
+                    "arguments": {
+                        "queryText": "Speedbit blaze pairing",
+                        "goodQuery": true
+                    }
+                },
+                {
+                    "type": "Click",
+                    "arguments": {
+                        "docNo": -1,
+                        "offset": 0,
+                        "probability": 1
+                    }
+                },
+                {
+                    "type": "Search",
+                    "arguments": {
+                        "queryText": "How to pair with iPhone 11",
+                        "goodQuery": true
+                    }
+                },
+                {
+                    "type": "Click",
+                    "arguments": {
+                        "docNo": -1,
+                        "offset": 0,
+                        "probability": 1
+                    }
+                },
+                {
+                    "type": "Search",
+                    "arguments": {
+                        "queryText": "iPhone XR with Speedbit",
+                        "goodQuery": true
+                    }
+                },
+                {
+                    "type": "Click",
+                    "arguments": {
+                        "docNo": -1,
+                        "offset": 0,
+                        "probability": 1
+                    }
+                },
+                {
+                    "type": "Search",
+                    "arguments": {
+                        "queryText": "Unable to pair phone",
+                        "goodQuery": true
+                    }
+                },
+                {
+                    "type": "Click",
+                    "arguments": {
+                        "docNo": -1,
+                        "offset": 0,
+                        "probability": 1
+                    }
+                },
+                {
+                    "type": "Search",
+                    "arguments": {
+                        "queryText": "Speedbit blaze pairing",
+                        "goodQuery": true
+                    }
+                },
+                {
+                    "type": "Click",
+                    "arguments": {
+                        "docNo": -1,
+                        "offset": 0,
+                        "probability": 1
+                    }
+                }
+            ]
+        },
+        {
+            "name": "x_speedbit-community-enterprise",
+            "weight": 1,
+            "events": [
+                {
+                    "type": "SetOrigin",
+                    "arguments": {
+                        "originLevel1": "x_speedbit-community-enterprise"
+                    }
+                },
+                {
+                    "type": "Search",
+                    "arguments": {
+                        "queryText": "Pair my phone",
+                        "goodQuery": true
+                    }
+                },
+                {
+                    "type": "Click",
+                    "arguments": {
+                        "docNo": -1,
+                        "offset": 0,
+                        "probability": 1
+                    }
+                },
+                {
+                    "type": "Search",
+                    "arguments": {
+                        "queryText": "How to pair with an iPhone 11",
+                        "goodQuery": true
+                    }
+                },
+                {
+                    "type": "Click",
+                    "arguments": {
+                        "docNo": -1,
+                        "offset": 0,
+                        "probability": 1
+                    }
+                },
+                {
+                    "type": "Search",
+                    "arguments": {
+                        "queryText": "How to pair my phone with Speedbit Blaze",
+                        "goodQuery": true
+                    }
+                },
+                {
+                    "type": "Click",
+                    "arguments": {
+                        "docNo": -1,
+                        "offset": 0,
+                        "probability": 1
+                    }
+                },
+                {
+                    "type": "Search",
+                    "arguments": {
+                        "queryText": "Bluetooth pairing",
+                        "goodQuery": true
+                    }
+                },
+                {
+                    "type": "Click",
+                    "arguments": {
+                        "docNo": -1,
+                        "offset": 0,
+                        "probability": 1
+                    }
+                },
+                {
+                    "type": "Search",
+                    "arguments": {
+                        "queryText": "Wireless Charging",
+                        "goodQuery": true
+                    }
+                },
+                {
+                    "type": "Click",
+                    "arguments": {
+                        "docNo": -1,
+                        "offset": 0,
+                        "probability": 1
+                    }
+                },
+                {
+                    "type": "Search",
+                    "arguments": {
+                        "queryText": "Heart Rate Tracking",
+                        "goodQuery": true
+                    }
+                },
+                {
+                    "type": "Click",
+                    "arguments": {
+                        "docNo": -1,
+                        "offset": 0,
+                        "probability": 1
+                    }
+                },
+                {
+                    "type": "Search",
+                    "arguments": {
+                        "queryText": "Speedbit Versa Drivers",
+                        "goodQuery": true
+                    }
+                },
+                {
+                    "type": "Click",
+                    "arguments": {
+                        "docNo": -1,
+                        "offset": 0,
+                        "probability": 1
+                    }
+                },
+                {
+                    "type": "Search",
+                    "arguments": {
+                        "queryText": "Speedbit Blaze Drivers",
+                        "goodQuery": true
+                    }
+                },
+                {
+                    "type": "Click",
+                    "arguments": {
+                        "docNo": -1,
+                        "offset": 0,
+                        "probability": 1
+                    }
+                }
+            ]
+        },
+        {
+            "name": "x_articlepage_topics",
+            "weight": 1,
+            "events": [
+                {
+                    "type": "SetOrigin",
+                    "arguments": {
+                        "originLevel1": "x_articlepage_topics"
+                    }
+                },
+                {
+                    "type": "Search",
+                    "arguments": {
+                        "queryText": "Phone Pairing",
+                        "goodQuery": true
+                    }
+                },
+                {
+                    "type": "Click",
+                    "arguments": {
+                        "docNo": -1,
+                        "offset": 0,
+                        "probability": 1
+                    }
+                },
+                {
+                    "type": "Search",
+                    "arguments": {
+                        "queryText": "iPhone",
+                        "goodQuery": true
+                    }
+                },
+                {
+                    "type": "Click",
+                    "arguments": {
+                        "docNo": -1,
+                        "offset": 0,
+                        "probability": 1
+                    }
+                },
+                {
+                    "type": "Search",
+                    "arguments": {
+                        "queryText": "Bluetooth",
+                        "goodQuery": true
+                    }
+                },
+                {
+                    "type": "Click",
+                    "arguments": {
+                        "docNo": -1,
+                        "offset": 0,
+                        "probability": 1
+                    }
+                },
+                {
+                    "type": "Search",
+                    "arguments": {
+                        "queryText": "Speedbit Blaze",
+                        "goodQuery": true
+                    }
+                },
+                {
+                    "type": "Click",
+                    "arguments": {
+                        "docNo": -1,
+                        "offset": 0,
+                        "probability": 1
+                    }
+                }
+            ]
+        },
+        {
+            "name": "x_searchpage_speedbit 1",
+            "weight": 1,
+            "events": [
+                {
+                    "type": "SetOrigin",
+                    "arguments": {
+                        "originLevel1": "x_searchpage_speedbit"
+                    }
+                },
+                {
+                    "type": "Search",
+                    "arguments": {
+                        "queryText": "Pair my Phone",
+                        "goodQuery": true
+                    }
+                },
+                {
+                    "type": "Click",
+                    "arguments": {
+                        "docNo": 1,
+                        "offset": 0,
+                        "probability": 1
+                    }
+                },
+                {
+                    "type": "Search",
+                    "arguments": {
+                        "queryText": "Speedbit Blaze",
+                        "goodQuery": true
+                    }
+                },
+                {
+                    "type": "Click",
+                    "arguments": {
+                        "docNo": 1,
+                        "offset": 0,
+                        "probability": 1
+                    }
+                }
+            ]
+        },
+        {
+            "name": "x_searchpage_speedbit 2 (synonym for pair/connect)",
+            "weight": 1,
+            "events": [
+                {
+                    "type": "SetOrigin",
+                    "arguments": {
+                        "originLevel1": "x_searchpage_speedbit"
+                    }
+                },
+                {
+                    "type": "Search",
+                    "arguments": {
+                        "queryText": "Connect my Phone",
+                        "goodQuery": true
+                    }
+                },
+                {
+                    "type": "Search",
+                    "arguments": {
+                        "queryText": "Pair my Phone",
+                        "goodQuery": true
+                    }
+                },
+                {
+                    "type": "Click",
+                    "arguments": {
+                        "docNo": -1,
+                        "offset": 0,
+                        "probability": 1
+                    }
+                },
+                {
+                    "type": "Search",
+                    "arguments": {
+                        "queryText": "Pair my iPhone with my Speedbit Blaze",
+                        "goodQuery": true
+                    }
+                },
+                {
+                    "type": "Click",
+                    "arguments": {
+                        "docNo": -1,
+                        "offset": 0,
+                        "probability": 1
+                    }
+                },
+                {
+                    "type": "Search",
+                    "arguments": {
+                        "queryText": "Pair my iPhone with my Speedbit Blaze",
+                        "goodQuery": true
+                    }
+                },
+                {
+                    "type": "Click",
+                    "arguments": {
+                        "docNo": -1,
+                        "offset": 0,
+                        "probability": 1
+                    }
+                },
+                {
+                    "type": "Search",
+                    "arguments": {
+                        "queryText": "Speedbit Blaze what's new",
+                        "goodQuery": true
+                    }
+                },
+                {
+                    "type": "Click",
+                    "arguments": {
+                        "docNo": -1,
+                        "offset": 0,
+                        "probability": 1
+                    }
+                }
+            ]
+        }
+    ]
+}
