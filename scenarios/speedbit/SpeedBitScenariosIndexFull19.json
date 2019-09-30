@@ -95,6 +95,168 @@
             ]
         },
         {
+            "name": "speedbit-community-enterprise",
+            "weight": 1,
+            "events": [
+                {
+                    "type": "SetOrigin",
+                    "arguments": {
+                        "originLevel1": "x_speedbit-community-enterprise"
+                    }
+                },
+                {
+                    "type": "Search",
+                    "arguments": {
+                        "queryText": "Pair my phone",
+                        "goodQuery": true
+                    }
+                },
+                {
+                    "type": "Click",
+                    "arguments": {
+                        "docNo": -1,
+                        "offset": 0,
+                        "probability": 1
+                    }
+                },
+                {
+                    "type": "Search",
+                    "arguments": {
+                        "queryText": "How to pair with an iPhone 11",
+                        "goodQuery": true
+                    }
+                },
+                {
+                    "type": "Click",
+                    "arguments": {
+                        "docNo": -1,
+                        "offset": 0,
+                        "probability": 1
+                    }
+                },
+                {
+                    "type": "Search",
+                    "arguments": {
+                        "queryText": "How to pair my phone with Speedbit Blaze",
+                        "goodQuery": true
+                    }
+                },
+                {
+                    "type": "Click",
+                    "arguments": {
+                        "docNo": -1,
+                        "offset": 0,
+                        "probability": 1
+                    }
+                },
+                {
+                    "type": "Search",
+                    "arguments": {
+                        "queryText": "Bluetooth pairing",
+                        "goodQuery": true
+                    }
+                },
+                {
+                    "type": "Click",
+                    "arguments": {
+                        "docNo": -1,
+                        "offset": 0,
+                        "probability": 1
+                    }
+                },
+                {
+                    "type": "Search",
+                    "arguments": {
+                        "queryText": "Wireless Charging",
+                        "goodQuery": true
+                    }
+                },
+                {
+                    "type": "Click",
+                    "arguments": {
+                        "docNo": -1,
+                        "offset": 0,
+                        "probability": 1
+                    }
+                },
+                {
+                    "type": "Search",
+                    "arguments": {
+                        "queryText": "Heart Rate Tracking",
+                        "goodQuery": true
+                    }
+                },
+                {
+                    "type": "Click",
+                    "arguments": {
+                        "docNo": -1,
+                        "offset": 0,
+                        "probability": 1
+                    }
+                },
+                {
+                    "type": "Search",
+                    "arguments": {
+                        "queryText": "Speedbit Versa Drivers",
+                        "goodQuery": true
+                    }
+                },
+                {
+                    "type": "Click",
+                    "arguments": {
+                        "docNo": -1,
+                        "offset": 0,
+                        "probability": 1
+                    }
+                },
+                {
+                    "type": "Search",
+                    "arguments": {
+                        "queryText": "Speedbit Blaze Drivers",
+                        "goodQuery": true
+                    }
+                },
+                {
+                    "type": "Click",
+                    "arguments": {
+                        "docNo": -1,
+                        "offset": 0,
+                        "probability": 1
+                    }
+                },
+                {
+                    "type": "Search",
+                    "arguments": {
+                        "queryText": "Track calories burned",
+                        "goodQuery": true
+                    }
+                },
+                {
+                    "type": "Click",
+                    "arguments": {
+                        "docNo": -1,
+                        "offset": 0,
+                        "probability": 1
+                    }
+                },
+                {
+                    "type": "Search",
+                    "arguments": {
+                        "queryText": "Track floors climbed",
+                        "goodQuery": true
+                    }
+                },
+                {
+                    "type": "Click",
+                    "arguments": {
+                        "docNo": -1,
+                        "offset": 0,
+                        "probability": 1
+                    }
+                }
+            ]
+        },
+        {
             "name": "x_speedbit-community-enterprise",
             "weight": 1,
             "events": [
@@ -213,6 +375,44 @@
                     "type": "Search",
                     "arguments": {
                         "queryText": "Speedbit Blaze Drivers",
+                        "goodQuery": true
+                    }
+                },
+                {
+                    "type": "Click",
+                    "arguments": {
+                        "docNo": -1,
+                        "offset": 0,
+                        "probability": 1
+                    }
+                },
+                {
+                    "type": "Click",
+                    "arguments": {
+                        "docNo": -1,
+                        "offset": 0,
+                        "probability": 1
+                    }
+                },
+                {
+                    "type": "Search",
+                    "arguments": {
+                        "queryText": "Track calories burned",
+                        "goodQuery": true
+                    }
+                },
+                {
+                    "type": "Click",
+                    "arguments": {
+                        "docNo": -1,
+                        "offset": 0,
+                        "probability": 1
+                    }
+                },
+                {
+                    "type": "Search",
+                    "arguments": {
+                        "queryText": "Track floors climbed",
                         "goodQuery": true
                     }
                 },
