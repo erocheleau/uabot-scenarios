@@ -658,92 +658,6 @@
       ]
     },
     {
-      "name": "GQ with facetchange to Type (message)> GQ -> C(45%)",
-      "weight": 1,
-      "events": [{
-          "type": "Search",
-          "arguments": {
-            "queryText": "connection",
-            "goodQuery": true
-          }
-        },
-        {
-          "type": "FacetChange",
-          "arguments": {
-            "facetTitle": "Type",
-            "facetValue": "Message",
-            "facetField": "@objecttype"
-          }
-        },
-        {
-          "type": "Click",
-          "arguments": {
-            "docNo": -1,
-            "offset": 0,
-            "probability": 0.45
-          }
-        }
-      ]
-    },
-    {
-      "name": "GQ with facetchange to Repository (Youtube)> GQ -> C(55%)",
-      "weight": 3,
-      "events": [{
-          "type": "Search",
-          "arguments": {
-            "queryText": "Speedbit Blaze",
-            "goodQuery": true
-          }
-        },
-        {
-          "type": "FacetChange",
-          "arguments": {
-            "facetTitle": "Repository",
-            "facetField": "@beautifulrepositorytype",
-            "facetValue": "Youtube"
-          }
-        },
-        {
-          "type": "Click",
-          "arguments": {
-            "docNo": -1,
-            "offset": 0,
-            "probability": 0.55,
-            "quickview": true
-          }
-        }
-      ]
-    },
-    {
-      "name": "GQ with facetchange to Year (2016)> GQ -> C(55%)",
-      "weight": 1,
-      "events": [{
-          "type": "Search",
-          "arguments": {
-            "queryText": "Map",
-            "goodQuery": true
-          }
-        },
-        {
-          "type": "FacetChange",
-          "arguments": {
-            "facetTitle": "Year",
-            "facetField": "@sysyear",
-            "facetValue": "2016"
-          }
-        },
-        {
-          "type": "Click",
-          "arguments": {
-            "docNo": -1,
-            "offset": 0,
-            "probability": 0.55,
-            "quickview": true
-          }
-        }
-      ]
-    },
-    {
       "name": "QC(quick view function, 60%, Quickview)",
       "weight": 2,
       "events": [{
@@ -1865,6 +1779,93 @@
             "customData": {
               "hasclicks": true
             }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Search -> FC -> C(80%)",
+      "weight": 3,
+      "events": [
+        {
+          "type": "Search",
+          "arguments": {
+            "queryText": "How to Pair with iPhone 11",
+            "goodQuery": true
+          }
+        },
+        {
+          "type": "FacetChange",
+          "arguments": {
+            "facetTitle": "Document Title",
+            "facetValue": "How To",
+            "facetField": "@objecttypename"
+          }
+        },
+        {
+          "type": "Click",
+          "arguments": {
+            "docNo": -1,
+            "offset": 0,
+            "probability": 0.8
+          }
+        }
+      ]
+    },
+    {
+      "name": "Search -> FC -> C(80%)",
+      "weight": 3,
+      "events": [
+        {
+          "type": "Search",
+          "arguments": {
+            "queryText": "how to pair my phone with speedbit blaze",
+            "goodQuery": true
+          }
+        },
+        {
+          "type": "FacetChange",
+          "arguments": {
+            "facetTitle": "Document Title",
+            "facetValue": "How To",
+            "facetField": "@objecttypename"
+          }
+        },
+        {
+          "type": "Click",
+          "arguments": {
+            "docNo": -1,
+            "offset": 0,
+            "probability": 0.8
+          }
+        }
+      ]
+    },
+    {
+      "name": "Search -> FC -> C(80%)",
+      "weight": 3,
+      "events": [
+        {
+          "type": "Search",
+          "arguments": {
+            "queryText": "how to setup bluetooth with my cell phone",
+            "goodQuery": true
+          }
+        },
+        {
+          "type": "FacetChange",
+          "arguments": {
+            "facetTitle": "Document Title",
+            "facetValue": "How To",
+            "facetField": "@objecttypename"
+          }
+        },
+        {
+          "type": "Click",
+          "arguments": {
+            "docNo": -1,
+            "offset": 0,
+            "probability": 0.8
           }
         }
       ]
