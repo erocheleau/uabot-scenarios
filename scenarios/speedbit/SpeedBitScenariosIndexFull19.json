@@ -618,6 +618,93 @@
                     }
                 }
             ]
+        },
+        {
+            "name": "Search -> FC -> C(80%)",
+            "weight": 3,
+            "events": [
+                {
+                    "type": "Search",
+                    "arguments": {
+                        "queryText": "How to Pair with iPhone 11",
+                        "goodQuery": true
+                    }
+                },
+                {
+                    "type": "FacetChange",
+                    "arguments": {
+                        "facetTitle": "Document Title",
+                        "facetValue": "How To",
+                        "facetField": "@objecttypename"
+                    }
+                },
+                {
+                    "type": "Click",
+                    "arguments": {
+                        "docNo": -1,
+                        "offset": 0,
+                        "probability": 0.8
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Search -> FC -> C(80%)",
+            "weight": 3,
+            "events": [
+                {
+                    "type": "Search",
+                    "arguments": {
+                        "queryText": "How to pair my phone with speedbit blaze",
+                        "goodQuery": true
+                    }
+                },
+                {
+                    "type": "FacetChange",
+                    "arguments": {
+                        "facetTitle": "Document Title",
+                        "facetValue": "How To",
+                        "facetField": "@objecttypename"
+                    }
+                },
+                {
+                    "type": "Click",
+                    "arguments": {
+                        "docNo": -1,
+                        "offset": 0,
+                        "probability": 0.8
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Search -> FC -> C(80%)",
+            "weight": 3,
+            "events": [
+                {
+                    "type": "Search",
+                    "arguments": {
+                        "queryText": "How to setup bluetooth with my cell phone",
+                        "goodQuery": true
+                    }
+                },
+                {
+                    "type": "FacetChange",
+                    "arguments": {
+                        "facetTitle": "Document Title",
+                        "facetValue": "How To",
+                        "facetField": "@objecttypename"
+                    }
+                },
+                {
+                    "type": "Click",
+                    "arguments": {
+                        "docNo": -1,
+                        "offset": 0,
+                        "probability": 0.8
+                    }
+                }
+            ]
         }
     ]
 }
