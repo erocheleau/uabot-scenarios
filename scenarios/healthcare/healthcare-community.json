@@ -9,7 +9,7 @@
 	"timeBetweenActions": 4,
 	"allowAnonymousVisits": false,
 	"anonymousThreshold": 0.05,
-	"orgName": "CignaTest",
+	"orgName": "HCDemo",
 	"pipeline": "default",
 	"allowEntitlements": false,
 	"randomCustomData": [
@@ -297,7 +297,6 @@
 		"chest pain",
 		"child",
 		"cholesterol",
-		"cigna",
 		"clinical trials",
 		"cold",
 		"common",
@@ -695,9 +694,9 @@
 				{
 					"type": "SetOrigin",
 					"arguments": {
-						"originLevel1": "demoCommunitySearch",
+						"originLevel1": "communitySearchCoveo",
 						"originLevel2": "All",
-						"originLevel3": "https://coveosehc.my.salesforce.com/"
+						"originLevel3": "https://healthcaredemocoveo-developer-edition.na174.force.com/"
 					}
 				},
 				{
@@ -734,9 +733,9 @@
 				{
 					"type": "SetOrigin",
 					"arguments": {
-						"originLevel1": "demoCommunitySearch",
+						"originLevel1": "communitySearchCoveo",
 						"originLevel2": "All",
-						"originLevel3": "https://coveosehc.my.salesforce.com/"
+						"originLevel3": "https://healthcaredemocoveo-developer-edition.na174.force.com/"
 					}
 				},
 				{
@@ -780,9 +779,9 @@
 				{
 					"type": "SetOrigin",
 					"arguments": {
-						"originLevel1": "demoCommunitySearch",
+						"originLevel1": "communitySearchCoveo",
 						"originLevel2": "All",
-						"originLevel3": "https://coveosehc.my.salesforce.com/"
+						"originLevel3": "https://healthcaredemocoveo-developer-edition.na174.force.com/"
 					}
 				},
 				{
@@ -815,6 +814,89 @@
 						"offset": 4,
 						"probability": 0.60,
 						"quickview": false
+					}
+				}
+			]
+		},
+		{
+			"name": "GQC4(5%)",
+			"weight": 5,
+			"events": [
+				{
+					"type": "SetOrigin",
+					"arguments": {
+						"originLevel1": " hcIPX",
+						"originLevel2": "All"
+					}
+				},
+				{
+					"type": "Search",
+					"arguments": {
+						"queryText": "",
+						"goodQuery": true
+					}
+				},
+				{
+					"type": "Click",
+					"arguments": {
+						"docNo": -1,
+						"offset": 3,
+						"probability": 0.7,
+						"quickview": false
+					}
+				},
+				{
+					"type": "Click",
+					"arguments": {
+						"docNo": -1,
+						"offset": 4,
+						"probability": 0.40,
+						"quickview": true
+					}
+				}
+			]
+		},
+		{
+			"name": "GQC5(5%)",
+			"weight": 5,
+			"events": [
+				{
+					"type": "SetOrigin",
+					"arguments": {
+						"originLevel1": "communityChat",
+						"originLevel2": "All"
+					}
+				},
+				{
+					"type": "Search",
+					"arguments": {
+						"queryText": "",
+						"goodQuery": true
+					}
+				},
+				{
+					"type": "Click",
+					"arguments": {
+						"docNo": -1,
+						"offset": 1,
+						"probability": 0.5,
+						"quickview": true
+					}
+				},
+				{
+					"type": "Search",
+					"arguments": {
+						"queryText": "",
+						"goodQuery": true
+					}
+				},
+				{
+					"type": "Click",
+					"arguments": {
+						"docNo": -1,
+						"offset": 2,
+						"probability": 0.70,
+						"quickview": true
 					}
 				}
 			]

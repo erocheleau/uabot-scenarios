@@ -4,12 +4,12 @@
 	"partialMatch": true,
 	"partialMatchKeywords": 3,
 	"partialMatchThreshold": "35%",
-	"defaultOriginLevel1": "CoveoCustomInsightPanel",
+	"defaultOriginLevel1": "hc-agent-panel3",
 	"timeBetweenVisits": 660,
 	"timeBetweenActions": 8,
 	"allowAnonymousVisits": false,
 	"anonymousThreshold": 0.05,
-	"orgName": "CignaTest",
+	"orgName": "HCDemo",
 	"pipeline": "default",
 	"allowEntitlements": false,
 	"randomCustomData": [
@@ -18,7 +18,7 @@
 			"values": [
 				"login to my doctor's web site",
 				"register for my screening test at the hospital",
-				"Contact my cigna doctor",
+				"Contact my doctor",
 				"Register health information event",
 				"Contact Events"
 			]
@@ -179,7 +179,7 @@
 		"young"
 	],
 	"emailSuffixes": [
-		"@cigna.com"
+		"@healthcareprime.com"
 	],
 	"randomGoodQueries": [
 		"ACC",
@@ -394,7 +394,7 @@
 		"chest pain",
 		"child",
 		"cholesterol",
-		"cigna",
+		"healthcareprime",
 		"clinical trials",
 		"cold",
 		"common side effects",
@@ -758,9 +758,8 @@
 				{
 					"type": "SetOrigin",
 					"arguments": {
-						"originLevel1": "CoveoCustomInsightPanel",
-						"originLevel2": "All",
-						"originLevel3": "https://coveosehc--c.documentforce.com/"
+						"originLevel1": "hc-agent-panel3",
+						"originLevel2": "All"
 					}
 				},
 				{
@@ -797,9 +796,8 @@
 				{
 					"type": "SetOrigin",
 					"arguments": {
-						"originLevel1": "CoveoCustomInsightPanel",
-						"originLevel2": "All",
-						"originLevel3": "https://coveosehc--c.documentforce.com/"
+						"originLevel1": "hc-agent-panel3",
+						"originLevel2": "All"
 					}
 				},
 				{
@@ -837,9 +835,8 @@
 				{
 					"type": "SetOrigin",
 					"arguments": {
-						"originLevel1": "CoveoCustomInsightPanel",
-						"originLevel2": "All",
-						"originLevel3": "https://coveosehc--c.documentforce.com/"
+						"originLevel1": "hc-agent-panel3",
+						"originLevel2": "All"
 					}
 				},
 				{
@@ -878,9 +875,8 @@
 				{
 					"type": "SetOrigin",
 					"arguments": {
-						"originLevel1": "CoveoCustomInsightPanel",
-						"originLevel2": "All",
-						"originLevel3": "https://coveosehc--c.documentforce.com/"
+						"originLevel1": "hc-agent-panel3",
+						"originLevel2": "All"
 					}
 				},
 				{
@@ -928,9 +924,8 @@
 				{
 					"type": "SetOrigin",
 					"arguments": {
-						"originLevel1": "CoveoCustomInsightPanel",
-						"originLevel2": "All",
-						"originLevel3": "https://coveosehc--c.documentforce.com/"
+						"originLevel1": "hc-agent-panel3",
+						"originLevel2": "All"
 					}
 				},
 				{
