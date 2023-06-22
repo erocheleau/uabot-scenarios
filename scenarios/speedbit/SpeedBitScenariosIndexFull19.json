@@ -4,6 +4,7 @@
     "orgName": "speedbit2",
     "timeBetweenVisits": 5,
     "defaultOriginLevel1": "default",
+    "randomCustomData": [{"apiname": "c_isbot", "values": ["true"]}],
     "randomGoodQueries": [],
     "randomBadQueries": [],
     "scenarios": [
